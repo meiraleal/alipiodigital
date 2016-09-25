@@ -1,7 +1,7 @@
 ---
 layout: page
 add_email : 1
-title : "Frequently Asked Questions"
+title : "Perguntas Frequentes"
 permalink: "/faq/"
 ---
 

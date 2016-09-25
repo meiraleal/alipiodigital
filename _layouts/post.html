@@ -28,37 +28,37 @@ layout: default
 
   </div>
 
-  <div class="post-info clearfix">
+
+<div class="post-info clearfix">
     <div class="aut-photo">
-      <img src="/images/author-photo.png" alt="" />
+      <img src="/images/icon.png" alt="" />
     </div>
     <div class="info">
-      <p class="author-name">MARC-EMILE PLOURDE, MD</p>
-      <p class="aut-desc">Lead Author</p>
-      <p class="email-me">Have thoughts to share — email me <a href="mailto:marc-emile@messil.com" class="e-mail">Marc-Emile@messil.com</a></p>
+      <p class="author-name">Equipe Alipio.digital</p>
+      <p class="email-me">Tem alguma dúvida ou sugestão? Compartilhe: <a href="mailto:contato@alipiodigital.com" class="e-mail">contato@alipiodigital.com</a></p>
     </div>
   </div>
 
 </section>
 
 <section class="blog-main read-next">
-  <p>read next</p>
+  <p>próxima</p>
   {% for post in site.related_posts limit:3 %}
   <div>
     <a class="cover-link" href="{{ post.url | prepend: site.baseurl }}"></a>
     <h3>{{ post.title }}</h3>
     <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-    <a href="{{ post.url | prepend: site.baseurl }}">Continue reading &rarr;</a>
+    <a href="{{ post.url | prepend: site.baseurl }}">Continuar lendo &rarr;</a>
   </div>
   {% endfor %}
 </section>
 
 <section class="get-new">
-  <h2>Get new articles direct in your mailbox</h2>
+  <h2>Receba as principais notícias por e-mail</h2>
   <form action="{{ site.mailchimp_action_url }}" method="post" target="_blank">
     <input type="email" name="EMAIL"  placeholder="Your e-mail address">
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="{{ site.mailchimp_hidden_field_name }}" tabindex="-1" value=""></div>
-    <button type="submit"  value="Subscribe" name="subscribe">Submit</button>
+    <button type="submit"  value="Subscribe" name="subscribe">Enviar</button>
   </form>
 </section>
