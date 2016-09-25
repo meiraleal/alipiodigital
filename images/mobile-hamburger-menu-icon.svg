@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="17px" viewBox="0 0 26 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>mobile-hamburger copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="spec" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="home-mobile-320" sketch:type="MSArtboardGroup" transform="translate(-276.000000, -16.000000)" fill="#F94045">
+            <path d="M276,17.2272727 C276,17.6289344 276.379017,17.9545455 276.833644,17.9545455 L301.166356,17.9545455 C301.626765,17.9545455 302,17.6317347 302,17.2272727 C302,16.8256111 301.620983,16.5 301.166356,16.5 L276.833644,16.5 C276.373235,16.5 276,16.8228108 276,17.2272727 L276,17.2272727 Z M276,24.5 C276,24.9016617 276.379017,25.2272727 276.833644,25.2272727 L301.166356,25.2272727 C301.626765,25.2272727 302,24.904462 302,24.5 C302,24.0983383 301.620983,23.7727273 301.166356,23.7727273 L276.833644,23.7727273 C276.373235,23.7727273 276,24.095538 276,24.5 L276,24.5 Z M276,31.7727273 C276,32.1743889 276.379017,32.5 276.833644,32.5 L301.166356,32.5 C301.626765,32.5 302,32.1771892 302,31.7727273 C302,31.3710656 301.620983,31.0454545 301.166356,31.0454545 L276.833644,31.0454545 C276.373235,31.0454545 276,31.3682653 276,31.7727273 L276,31.7727273 Z" id="mobile-hamburger-copy" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="faq-main clearfix markdown_here">
+    <h1>{{ page.title }}</h1>
+    <div class="markdown">
+      {{ content }}
+    </div>
+</section>
+
+
+
+{% if page.add_email == 1 %}
+  <section class="ask">
+      <h2>Didn't Find the Answer?</h2>
+      <p><a href="mailto:MDonCall@messil.com">MDonCall@messil.com</a></p>
+  </section>
+{% endif %}

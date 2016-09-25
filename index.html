@@ -1,18 +1,65 @@
-<!doctype html>
-<title>Alipio.digital - Site em manutenção</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+---
+layout: default_empty
+title: MD on Call — Practical Guide to Surviving the Night
+---
 
-<article>
-    <h1>Daqui a pouco estamos de volta!</h1>
-    <div>
-      <p>Desculpe-nos pelo inconveniente. Estamos atualizando nossos sistemas!</p>
-        <p>&mdash; Equipe Alipio Digital</p>
+<header class="clearfix home-header" id="header">
+  <a href="/" class="logo"></a>
+  <div class="visible-xs pull-right nav-btn">
+    <a href="/"></a>
+  </div>
+  <div class="mob-nav visible-xs">
+    {% include mobilenav-dropdown.html %}
+  </div>
+</header>
+<section class="col-sm-6 col-xs-12 mobile-apps" id="mob-apps">
+  <div id="mobile-inside">
+    <div class="top-block">
+      <h2>Guia Comercial Regional</h2>
+      <p>Todas as informações que você precisa e procura na região, disponíveis em um aplicativo. </p>
+
+      <!--<a href="{{ 'promo/' | prepend: site.baseurl }}" class="btn hidden-xs">Baixe o applicativo</a>-->
+      <a href="{{ site.google_play_url }}" class="btn hidden-xs">Baixe o applicativo</a>
     </div>
-</article>
+    <a class="app-icon"></a>
+    <div class="get-in-store">
+      <a class="app-store" href="{{ site.appstore_url }}"></a>
+      <a class="google-play" href="{{ site.google_play_url }}"></a>
+    </div>
+    <h3>Disponível para smartphones e tablets</h3>
+    <img class="devices hidden-xs" src="images/home-devices-small.png" alt=""/><br/>
+    <a href="{{ '/promo/' | prepend: site.baseurl }}" class="btn btn-xs">Saiba mais</a>
+    <a href="{{ '/faq/' | prepend: site.baseurl }}" class="to-faq hidden-xs">FAQ e suporte</a>
+  </div>
+</section>
+<div class="clearfix visible-xs"></div>
+<section class="col-sm-6 col-xs-12 blog" id="to-blog">
+  <div id="blog-inside">
+    <div class="top-block">
+      <h2>Notícias</h2>
+      <p>As principais informações regionais e sobre o aplicativo.</p>
+      <a href="{{ 'blog/' | prepend: site.baseurl }}" class="btn">Ver todas</a>
+    </div>
+    <div class="stories">
+      {% assign mainposts = site.posts | where: "favorite", 1 %}
+      {% for post in mainposts  limit:3 %}
+      <div>
+	<a href="{{ post.url | prepend: site.baseurl }}">
+	  <h3>{{ post.title }}</h3>
+	  <div class="markdown">
+	    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+	  </div>
+	</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+<footer class="footer-xs visible-xs">
+  <a class="to-store app-store-xs" href="{{ site.appstore_url }}"></a>
+  <a class="to-store google-play-xs" href="{{ site.google_play_url }}"></a>
+  <div class="to-faq-xs">
+    <a href="{{ 'faq/' | prepend: site.baseurl }}">FAQ e suporte</a>
+  </div>
+</footer>

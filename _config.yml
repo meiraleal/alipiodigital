@@ -1,0 +1,70 @@
+# Site settings
+title: MD on Call
+email: your-email@domain.com
+description: MD on Call was written and designed to be the most efficient tool to help interns and junior residents survive their first nights on call. At 2AM you want - and need - to be efficient. Be efficient with MD on Call for iOS and Android.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mdoncalltheapp.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+subscribe_facebook_url: "http://facebook.com"
+subscribe_twitter_url: "http://twitter.com"
+
+google_play_url: "https://play.google.com/store/apps/details?id=com.alipiodigital"
+appstore_url: "https://play.google.com/store/apps/details?id=com.alipiodigital" #"https://itunes.apple.com/ca/app/md-on-call-practical-guide/id333195169"
+
+mailchimp_action_url: "//messil.us8.list-manage.com/subscribe/post?u=610472a7da1d9ffb00b03d491&amp;id=eb93e1513a"
+mailchimp_hidden_field_name: "b_61047237da1d9ffb00b03d491_eb93e1513a"
+
+facebook_share_app_id: "1050330230325"
+
+# Build settings
+markdown: kramdown
+
+#output settings
+permalink: /:title
+excerpt_separator: <!--more-->
+
+
+#prose settings
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://www.alipiodigital.com'
+  media: 'media'
+  ignore:
+    
+    - feed.xml
+    - promo.html
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
+      - name: "favorite"
+        field:
+          element: "select"
+          label: "Mostrar na página?"
+          placeholder: ""
+          options:
+            - name: "Show"
+              value: 1
+            - name: "Hide"
+              value: 0
+
+
+# Settings for analytics helper
+# Set 'provider' to the analytics provider you want to use.
+# Set 'provider' to false to turn analytics off globally.
+#        
+analytics :
+  provider : google
+  google : 
+      tracking_id : 'UA-28985307-5'

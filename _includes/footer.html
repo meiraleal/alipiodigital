@@ -1,0 +1,82 @@
+
+<footer class="default-footer clearfix">
+    <div class="copyright"><a href="/">© 2016 MDonCall</a></div>
+    <div class="footer-nav nav hidden-xs hidden-sm">
+        <ul class="list-inline">
+            <li><a href="/promo/">Mobile app</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/faq/">FAQ &amp; Support</a></li>
+            <li><a href="/presskit/">Press Kit</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+        </ul>
+        <div class="copyright">© 2016 MD on Call</div>
+    </div>
+    <div class="to-store">
+        <a href="{{ site.appstore_url }}" class="app-store"></a>
+        <a href="{{ site.google_play_url }}" class="google-play"></a>
+    </div>
+    <div class="footer-nav nav visible-sm visible-xs">
+        <ul>
+            <li><a href="/promo/">Mobile app</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/faq/">FAQ &amp; Support</a></li>
+            <li><a href="/presskit/">Press Kit</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+        </ul>
+    </div>
+    <div class="copyright visible-xs visible-sm">
+      <a href="/">© 2016 MDonCall</a>
+    </div>
+</footer>
+
+<div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Subscribe to get instant blog updates</h4>
+            </div>
+            <div class="modal-body">
+                <div class="networks clearfix">
+                    <div class="col-xs-4">
+                      <a href="{{ site.subscribe_twitter_url }}" target="_blank">
+                        <img src="{{ "/images/subscribe-popup-twitter-icon.svg" | prepend: site.baseurl }}" alt=""/>
+                        <p>
+                          Every new post in blog with link
+                            and short description
+                        </p>
+                      </a>
+                    </div>
+                    <div class="col-xs-4">
+                      <a href="{{ site.subscribe_facebook_url }}" target="_blank">
+                        <img src="{{ "/images/subscribe-popup-facebook-icon.svg" | prepend: site.baseurl }}" alt=""/>
+                        <p>
+                            Blogposts and other news about
+                            the app into your newsfeed
+                        </p>
+                      </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                          <img src="{{ "/images/subscribe-popup-rss-icon.svg" | prepend: site.baseurl }}" alt=""/>
+                          <p>
+                              Get each new post into your RSS feed
+                          </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <h5>Get each new post direct into your mailbox</h5>
+                <form action="{{ site.mailchimp_action_url }}" method="post" target="_blank">
+                    <input type="email" name="EMAIL" placeholder="Email address"/>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="{{ site.mailchimp_hidden_field_name }}" tabindex="-1" value=""></div>
+                    <button type="submit"  value="Subscribe" name="subscribe">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End mc_embed_signup-->

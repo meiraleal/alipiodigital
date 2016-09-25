@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="46px" height="45px" viewBox="0 0 46 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>RSS</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="spec" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="blog-1280-copy" sketch:type="MSArtboardGroup" transform="translate(-812.000000, -421.000000)">
+            <g id="subscribe" sketch:type="MSLayerGroup" transform="translate(338.000000, 299.000000)">
+                <g id="RSS" transform="translate(474.687500, 122.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-20" fill="#E8411B" x="0" y="0" width="45" height="45" rx="3"></rect>
+                    <path d="M8.26425,8.25 L8.26425,13.7054455 C20.94865,13.7054455 31.2742,24.0462796 31.2742,36.75 L36.75,36.75 C36.75,21.0325783 23.97535,8.25 8.26425,8.25 L8.26425,8.25 Z M8.2576,17.929568 L8.2576,23.3916642 C11.8125,23.3916642 15.15935,24.7835534 17.6778,27.3032053 C20.1896,29.8190569 21.58135,33.1757426 21.58135,36.75 L27.06475,36.75 C27.06475,26.370212 18.624,17.929568 8.2576,17.929568 L8.2576,17.929568 Z M12.04905,29.1511401 C9.95525,29.1511401 8.25,30.8546605 8.25,32.9363186 C8.25,35.0246275 9.95525,36.7186469 12.04905,36.7186469 C14.15045,36.7186469 15.8481,35.0246275 15.8481,32.9363186 C15.8481,30.8546605 14.15045,29.1511401 12.04905,29.1511401 L12.04905,29.1511401 Z" id="Fill-87" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
